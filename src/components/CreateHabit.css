@@ -1,0 +1,62 @@
+.create-habit{
+   background-color: whitesmoke;
+    grid-area:main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    
+    border-radius: 1rem 0 0 1rem;
+    color: black;
+}
+
+
+
+
+.today-info{
+
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+   
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+
+}
+
+.today-info span{
+
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+ 
+    
+}
+
+.this-week-heading{
+    font-size: 1.5rem;
+    font-weight: 800;
+    
+}
+
+.habit-card-list{
+    height: 100%;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.habit-card{
+    height: 200px;
+    width: 400px;
+    background: rgb(217, 217, 217);
+    border-radius: 10px;
+}
