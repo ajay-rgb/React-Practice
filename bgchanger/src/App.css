@@ -1,0 +1,72 @@
+.app{
+  height:700px;
+  width:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:rgb(40, 0, 78);
+  font-family: sans-serif
+}
+
+.main{
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(245, 245, 245, 0.528);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+input{
+  height: 30px;
+  width: 100%;
+  background: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px
+}
+
+#password{
+  color: black;
+}
+
+.display{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;
+}
+
+.display button{
+  height: 50px;
+  width: 20%;
+  background: orange;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+button{
+  height: 30px;
+  width: 50%;
+  background: rgb(132, 255, 0);
+  border: none;
+  border-radius:5px;
+  color: black;
+  margin: 10px;
+  padding : 10px;
+  cursor: pointer;
+
+}
+
+.setting{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center
+}
+
