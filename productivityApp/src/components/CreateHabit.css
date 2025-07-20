@@ -18,12 +18,76 @@
     width: 100%;
     height: fit-content;
     display: flex;
-    justify-content: space-between;
+  
     flex-direction: row;
-   
+   align-items: center;
     padding-bottom: 10px;
     border-bottom: 2px solid black;
+    
+    
 
+}
+.today-info button{
+    height: 20px;
+    width: fit-content;
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 5px;
+
+    font-weight: 900;
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.add-habit-popup{
+    
+    background: rgb(234, 234, 234);
+    width: 200px;
+    height: 180px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    right: 50%;
+}
+.add-habit-popup input{
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: black;
+    padding: 5px;
+    background: white;
+    outline: none;
+}
+.checkbox-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8px;
+    scale: 0.8;
+    background:rgb(255, 255, 255);
+    border-radius: 5px;
+    padding:10px;
+    font-size: 0.6rem;
+    color
+}
+.today-info button:hover{
+    scale: 1.1;
+    cursor: pointer;
+    color: black;
+    background: white;
+    border: 1px solid black;
 }
 
 .today-info span{
@@ -31,7 +95,8 @@
     text-align: center;
     border-radius: 5px;
     padding: 5px;
- 
+    position: fixed;
+   margin-left: 25px;
     
 }
 

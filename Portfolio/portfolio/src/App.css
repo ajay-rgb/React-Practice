@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+.app{
+  
+  padding: 15px;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  background: blueviolet;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%
+}
+
+.layout{
+
+  display: grid;
+ 
+  grid-template-areas:
+  "header header header"
+  "content content content"
+  "content content content"
+  "footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr 50px;
+
+  
+}
+.header{
+  grid-area: header;
+  background:white;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+  line-height: 1.1;
+  
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(128, 0, 255);
+  background-size: 200% 200%;
+  animation: spin 2s linear infinite;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.circle img {
+  width: 100%;
+  height: 100%;
+  scale: 1.2;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.horizontal{
+  text-align: right;
+
+}
+.name{
+  display: flex;
+ 
+  align-items: center;
+  gap: 30px;
+}
+#portfolio-heading {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  color: blueviolet;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.content{
+  height: 220px;
+  
+  margin-top: 10px;
+  grid-area: content;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background: white;
+  border-radius: 20px;
+  
+}
+.project-heading{
+  margin-left: 20px;
+  height: fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background: blueviolet;
+  color: white;
+}
+.project-container{
+  position: relative;
+  right: 5%;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-card{
+  background-image: linear-gradient(blueviolet,rgb(189, 131, 255));
+  border: 1px solid black;
+  height: 60%;
+  width: 150px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  font-size:12px;
+  font-weight:150;
+}
+.project-card:hover{
+  scale: 1.02;
+  transition:cubic-bezier(1, 1, 0.2, 1);
+}
+.footer{
+  grid-area: footer;
+  color: violet;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+a{
+  color: white;
+  text-decoration: none;
+
+}
